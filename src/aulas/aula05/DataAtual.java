@@ -7,8 +7,8 @@ public class DataAtual {
 
 	public static void main(String[] args) {
 		GregorianCalendar gc = new GregorianCalendar();
-		int minutos = gc.get(Calendar.YEAR);
-		System.out.println(minutos);
+		int anoAtual = gc.get(GregorianCalendar.YEAR);
+		System.out.println(anoAtual);
 	}
 
 }
