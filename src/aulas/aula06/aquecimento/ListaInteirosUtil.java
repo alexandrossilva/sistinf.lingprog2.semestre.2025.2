@@ -1,4 +1,4 @@
-package aulas.aula06;
+package aulas.aula06.aquecimento;
 
 import java.util.Scanner;
 
@@ -28,7 +28,12 @@ public class ListaInteirosUtil {
 		int n = scanner.nextInt();
 		scanner.nextLine();
 		
-		lista.adicionar(n);
+		try {
+			lista.adicionar(n);			
+		}
+		catch(IllegalStateException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 	public static void listar() {

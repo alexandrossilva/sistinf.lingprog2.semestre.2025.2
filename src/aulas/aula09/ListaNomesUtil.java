@@ -1,15 +1,15 @@
-package aulas.aula06;
+package aulas.aula09;
 
 import java.util.Scanner;
 
-public class ListaInteirosUtil {
+public class ListaNomesUtil {
 
 	private static Scanner scanner;
-	private static ListaInteiros lista;	
+	private static ListaStrings lista;	
 
 	public static void main(String[] args) throws Exception {
 		scanner = new Scanner(System.in);
-		lista = new ListaInteiros(3);	
+		lista = new ListaStrings(3);	
 		String op;
 		
 		do {
@@ -24,14 +24,18 @@ public class ListaInteirosUtil {
 	}
 	
 	public static void adicionar() {
-		System.out.printf("Informe inteiro a ser inserido: ");
-		int n = scanner.nextInt();
-		scanner.nextLine();
+		System.out.printf("Informe nome a ser inserido: ");
+		String n = scanner.nextLine();
 		
-		lista.adicionar(n);
+		try {
+			lista.adicionar(n);			
+		}
+		catch(IllegalStateException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 	public static void listar() {
-		System.out.printf("Lista de inteiros: %s\n", lista.toString());
+		System.out.printf("Lista de nomes: %s\n", lista.toString());
 	}
 }
