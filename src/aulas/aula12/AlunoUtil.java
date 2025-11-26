@@ -39,16 +39,48 @@ public class AlunoUtil {
 		System.out.print("Matricula: ");
 		int matricula = scanner.nextInt();
 		scanner.nextLine();
-		
-		System.out.print("Nome.....: ");
-		String nome = scanner.nextLine();
+
+		boolean isNomeCadastrado;
+
+		do {
+			System.out.print("Nome.....: ");
+			String nome = scanner.nextLine();			
+			
+			isNomeCadastrado = false;
+			
+			for (Aluno a: lista) {
+				if (a.getNome().equalsIgnoreCase(nome)) {
+					isNomeCadastrado = true;
+					break;
+				}
+			}
+
+			if (isNomeCadastrado) {
+				
+			}
+		} while (!isNomeCadastrado);
 
 		System.out.print("Curso....: ");
 		String curso = scanner.nextLine();
 		
-		Aluno aluno = new Aluno(matricula, nome, curso);
+		/*boolean isNomeCadastrado = false;
 		
-		lista.add(aluno);
+		for (Aluno a: lista) {
+			if (a.getNome().equalsIgnoreCase(nome)) {
+				isNomeCadastrado = true;
+				break;
+			}
+		}
+		
+		if (isNomeCadastrado) {
+			System.out.println("Nome já cadastrado!\n");
+		}
+		else {
+			Aluno aluno = new Aluno(matricula, nome, curso);
+			
+			lista.add(aluno);			
+		}*/
+		
 	}
 	
 	public static void listarAlunos() {
