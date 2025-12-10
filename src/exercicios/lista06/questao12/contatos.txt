@@ -1,0 +1,10 @@
+Carlos Eduardo Silva|+55 11 98765-4321|Família
+Mariana Lopes Ferreira|+55 21 99876-5432|Amizade
+José Roberto Almeida Toledo|+55 31 91234-5678|Profissional
+Ana Rodrigues|+55 41 93456-7890|Família
+Lucas Fernando Costa|+55 51 95678-1234|Profissional
+Patrícia Gomes Nogueira|+55 61 97845-3210|Amizade
+Fernando Henrique Pires|+55 71 96543-2109|Profissional
+Camila Araujo Martins Serafim|+55 81 94321-8765|Amizade
+Ricardo Souza Barros|+55 85 95432-1098|Profissional
+Juliana Monteiro Teixeira|+55 19 96789-6543|Família
